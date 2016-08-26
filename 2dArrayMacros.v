@@ -16,7 +16,7 @@
 //wire [15:0] out [0:1];
 //`PACK_ARRAY(16,2,out,pack_16_2_out)
 
-//taken from mrflibble's comment in http://www.edaboard.com/thread80929.html
+//originally taken from mrflibble's comment in http://www.edaboard.com/thread80929.html
 
 `define PACK_ARRAY(PK_WIDTH,PK_LEN,PK_SRC,PK_DEST) \
 genvar pk_idx; \
@@ -25,8 +25,9 @@ generate \
 		assign PK_DEST[((PK_WIDTH)*pk_idx+((PK_WIDTH)-1)):((PK_WIDTH)*pk_idx)] = PK_SRC[pk_idx][((PK_WIDTH)-1):0]; \
 	end \
 endgenerate \
-//endgenerate \
+//endgenerate \ these used to be needed for buggy XST
 
+//PACK_ARRAY2 and UNPACK_ARRAY2 allow the specification of index and loop labels so they can be used multiple times inside the same module.
 `define PACK_ARRAY2(PK_WIDTH,PK_LEN,PK_SRC,PK_DEST,PK_IDX,LOOP_LABEL) \
 genvar PK_IDX; \
 generate \
@@ -56,7 +57,7 @@ endgenerate \
 
 
 //FOLLOWING TWO MACROS SHOULD ONLY BE USED INSIDE THE BLOCKRAM.V FILE
-
+//Based on how the rams are layed out, we need these custom unpackers to ensure messages get routed to the right place.
 //when dealing with check messages, we can use the regular pack/unpack macros.
 //when interfacing with variables, things need to be reordered.
 //this is due to wanting to use the regular pack/unpack macros outside this module

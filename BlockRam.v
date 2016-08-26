@@ -25,7 +25,8 @@ Shouldn't be an issue though. Make use of tags.
 //really looks like xst doesnt want to infer rams. this will force it to.
 //for SimpleRam2 there is a onle clock cycle latency on the read pipeline.
 //This means that the read output is registered.
-module SimpleRam2 #
+//XST was having a real hard time inferring block rams. This module does it explicitly.
+/*module SimpleRam2 #
 (
 	parameter RAM_SIZE = 31,
 	parameter DATA_WIDTH = 8,
@@ -66,11 +67,10 @@ endgenerate
 assign read_data_out = outRamData[DATA_WIDTH-1:0];
 
 endmodule
+*/
 
-
-//basic ram. uses reg declarations currently.
-//this should map to the xilinx block ram!
-module SimpleRam # 
+//basic ram. uses reg declarations currently. should infer block rams
+module SimpleRam2 # 
 (
 	parameter RAM_SIZE = 31,
 	parameter DATA_WIDTH = 8,

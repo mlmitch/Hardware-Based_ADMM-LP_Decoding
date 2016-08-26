@@ -88,6 +88,11 @@ Therefore, inside SortNetwork, unsortedData is unpacked into a ```wire signed [D
 Similary, at the output the bus must be repacked into sortedData.
 Unpacking and packing are accomplished with macros inside 2dArrayMacros.v
 
+The good part of the above module contract is that knowing pipeline depths isn't necessary.
+For example in the decoder, variable nodes have this contract.
+They are simply hooked up to the decoder control logic and the decoder doesn't have to know how many clock cycles VNs use.
+This allows one to change variable and check degrees to try out a new code without changing the source code.
+
 
 
 

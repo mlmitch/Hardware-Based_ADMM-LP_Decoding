@@ -13,8 +13,19 @@ Note that there is only clk, reset, and enable for control signals.
 This module is to be used in parallel with pipeline train.
 
 This module always takes ceil(log2(BLOCKLENGTH)) time steps.
+This is relied on in other modules and is what allows the simpler input/output contract.
+
 No input registering.
 
+The functioning of the module is pretty simple.
+Each implementation kind of mimics a recursive implementation.
+Basically, its a min tree.
+At the first layer we just compare values beside eachother.
+The output of that layer is a vector half the size with the minimum values.
+Also, a BLOCKLENGTH length vector is passed on indicating which positions the mins came from.
+The next layer than cuts the vector of mins in half again and turns off relevant bits in the indicator vector.
+This is done until the indicator vector is one-hot.
+The one-hot vector is the output.
 */
 
 `include "2dArrayMacros.v"
@@ -34,6 +45,10 @@ module ArgMin #
 	output [0:BLOCKLENGTH-1] arg	
 );
 
+//instantiate different circuits depending on blocklength
+//There might be a nice recursive declaration of this module 
+//but I was having trouble guaranteeing the pipeline depth
+//when the two recursive calls would have different depths.
 generate
 	if( 1 == BLOCKLENGTH ) begin
 		assign arg[0] = 1'b1;
