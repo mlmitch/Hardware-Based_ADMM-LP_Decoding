@@ -5,24 +5,27 @@ We chose the MIT license so people in industry wouldn't be dissuaded from lookin
 Just cite the literature below if it you use it or it helps you out at all.
 The CenteredDecoderADMM module within CenteredDecoderADMM.v is the top-level module in this repository.
 
+##### License
+Note the use of the MIT software license. You are pretty free to do whatever you like with the source code. However, I do ask that you cite this repository and some combination of the literature below in any resulting publications.
+
 ##### Literature
 Here is relevant literature produced during my degree.
 
-Conference paper that gives a brief summary of my thesis results. I suggest looking here first. A little dense buty it's very short.
+Conference paper that gives a brief summary of my thesis results. I suggest looking here first. A little dense but it's very short.
 
-M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear programming decoding via the alternating direction method of multipliers,” in Proc. IEEE Int. Conf. on Acoustics, Speech and Signal Processing (ICASSP), New Orleans, LA, USA, Mar. 2017, pp. 1143-1147.
+[1] M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear programming decoding via the alternating direction method of multipliers,” in Proc. IEEE Int. Conf. on Acoustics, Speech and Signal Processing (ICASSP), New Orleans, LA, USA, Mar. 2017, pp. 1143-1147.
 
 Journal article pre-print that summarizes my thesis results and lays everything out. I suggest reading this if you want to fully understand what is going on.
 
-M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear program decoding with the alternating direction method of multipliers,” 2016. [Online]. Available: https://arxiv.org/abs/1611.05975
+[2] M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear program decoding with the alternating direction method of multipliers,” 2016. [Online]. Available: https://arxiv.org/abs/1611.05975
 
 My thesis document. Read if the journal article pre-print wasn't in depth enough.
 
-[2] M. Wasson, “Hardware-based linear program decoding with the alternating direction method of multipliers,” Master’s thesis, University of Toronto, Canada, Nov. 2016.
+[3] M. Wasson, “Hardware-based linear program decoding with the alternating direction method of multipliers,” Master’s thesis, University of Toronto, Canada, Nov. 2016.
 
 Early conference paper that is a little dated. Useful for some of the design decisions regarding parity polytope projection. Better intuition is given in the journal article and thesis document.
 
-[1] M. Wasson and S. C. Draper, “Hardware based projection onto the parity polytope and probability simplex,” in Proc. 49th Asilomar Conf. Signals, Systems, Computers, Pacific Grove, CA, Nov. 2015, pp. 1015–1020.
+[4] M. Wasson and S. C. Draper, “Hardware based projection onto the parity polytope and probability simplex,” in Proc. 49th Asilomar Conf. Signals, Systems, Computers, Pacific Grove, CA, Nov. 2015, pp. 1015–1020.
 
 Here are a few prior works if you aren't familiar with LP decoding, ADMM, or ADMM's application to LP decoding.
 
