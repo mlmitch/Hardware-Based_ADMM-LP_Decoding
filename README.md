@@ -8,17 +8,21 @@ The CenteredDecoderADMM module within CenteredDecoderADMM.v is the top-level mod
 ##### Literature
 Here is relevant literature produced during my degree.
 
-This conference paper used an earlier non-pipelined version of parity polytope projection.
+Conference paper that gives a brief summary of my thesis results. I suggest looking here first. A little dense buty it's very short.
 
-[1] M. Wasson and S. C. Draper, “Hardware based projection onto the parity polytope and probability simplex,” in Proc. 49th Asilomar Conf. Signals, Systems, Computers, Pacific Grove, CA, Nov. 2015, pp. 1015–1020.
+M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear programming decoding via the alternating direction method of multipliers,” in Proc. IEEE Int. Conf. on Acoustics, Speech and Signal Processing (ICASSP), New Orleans, LA, USA, Mar. 2017, pp. 1143-1147.
 
-My thesis document.
+Journal article pre-print that summarizes my thesis results and lays everything out. I suggest reading this if you want to fully understand what is going on.
+
+M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear program decoding with the alternating direction method of multipliers,” 2016. [Online]. Available: https://arxiv.org/abs/1611.05975
+
+My thesis document. Read if the journal article pre-print wasn't in depth enough.
 
 [2] M. Wasson, “Hardware-based linear program decoding with the alternating direction method of multipliers,” Master’s thesis, University of Toronto, Canada, Nov. 2016.
 
-There is both a conference and journal version of this in different stages of submission process. Will update in the future.
+Early conference paper that is a little dated. Useful for some of the design decisions regarding parity polytope projection. Better intuition is given in the journal article and thesis document.
 
-[3] M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear program decoding with the alternating direction method of multipliers,” Submitted for publication.
+[1] M. Wasson and S. C. Draper, “Hardware based projection onto the parity polytope and probability simplex,” in Proc. 49th Asilomar Conf. Signals, Systems, Computers, Pacific Grove, CA, Nov. 2015, pp. 1015–1020.
 
 Here are a few prior works if you aren't familiar with LP decoding, ADMM, or ADMM's application to LP decoding.
 
