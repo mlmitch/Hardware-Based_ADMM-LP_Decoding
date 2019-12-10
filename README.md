@@ -15,9 +15,9 @@ Conference paper that gives a brief summary of my thesis results. I suggest look
 
 [1] M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear programming decoding via the alternating direction method of multipliers,” in Proc. IEEE Int. Conf. on Acoustics, Speech and Signal Processing (ICASSP), New Orleans, LA, USA, Mar. 2017, pp. 1143-1147.
 
-Journal article pre-print that summarizes my thesis results and lays everything out. I suggest reading this if you want to fully understand what is going on.
+Journal article that summarizes my thesis results and lays everything out. I suggest reading this if you want to fully understand what is going on.
 
-[2] M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear program decoding with the alternating direction method of multipliers,” 2016. [Online]. Available: https://arxiv.org/abs/1611.05975
+[2] M. Wasson, M. Milicevic, S. C. Draper, and G. Gulak, “Hardware-based linear program decoding with the alternating direction method of multipliers,” IEEE Trans. Signal Process. vol. 67, no. 19, pp. 4976–4991, Oct. 2019.
 
 My thesis document. Read if the journal article pre-print wasn't in depth enough.
 
